@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    
+    <!-- header -->
+    <header id = "home" class = "vh-100 flex">
+        <div class = "container">
+
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="img/background.jpg" alt=""> 
+            </video>
+
+            </nav>
+
+            <div class = "home-content">
+                <h1>Hi! I'm,<br><span></span></h1>
+                <h2>Ma.Samantha Nicole A. Torre</h2>
+                <h3>I'm a <span class="auto-type"></span></h3>
+            
+                <ul class = "social-links">
+                    <li>
+                        <a href = "#" class = "flex">
+                            <i class = "fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#" class = "flex">
+                            <i class = "fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <!-- about -->
+        <section id = "about" class = "about py-7">
+            <div class = "container">
+                <div class = "about-content grid">
+                    <div class = "about-left">
+                        <img src = "img/My.jpg" alt = "">
+                    </div>
+                    <div class = "about-right">
+                        <div class = "title">
+                            <h2>About Me</h2>
+                        </div>
+                        <p class = "lead">Hello, I’m Ma. Samantha Nicole A. Torre or you can call me Sam. I am a Computer Engineering student from Cavite State University - CCAT Campus (CvSU CCAT Campus) located at Tejeros Convention, Rosario, Cavite. I am a humble person and have a unique long name that serves as many nicknames. I’m always eager to learn new things and grow by new experiences in the field of Computer Engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- hobbies -->
+        <section id = "hobbies" class = "vh-100 flex py-7">
+            <div class = "container">
+                <div class = "hobbies-content">
+                    <div class = "title">
+                        <h2>My Hobbies</h2>
+                    </div>
+                    <ul class = "work-top grid">
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> Reading </li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> Dancing </li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> Cooking</li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> Playing Clarinet </li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> Listening to music </li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> Watching movies/series </li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> Taking a nature picture </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section id = "achievements" class = "vh-100 py-7">
+            <div class = "container">
+                <div class = "achievements-content">
+                    <div class = "title">
+                        <h2>My Achievements</h2>
+                        <a href = "#contact" class = "btn-down">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+
+                    <div class = "achievements-grid grid">
+                        <div><img src = "img/clarinet members.jpg"></div>
+                        <div><img src = "img/clarinet family.jpg"></div>
+                        <div><img src = "img/parade.jpg"></div>
+                        <div><img src = "img/physics.jpg"></div>
+                        <div><img src = "img/best in research.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id = "contact" class = "py-7">
+            <div class = "container">
+                <div class = "contact-content flex">
+                    <div class = "contact-left">
+                        <div class="title">
+                            <h2>contact me</h2>
+                        </div>
+                        <p class = "lead"><i class = "fas fa-phone-alt"></i> 09*******01</p>
+                        <p class = "lead"><i class = "fas fa-envelope"></i> samanthatorre0919@gmail.com</p>
+                        <form action="">
+                            <input type = "text" class = "form-control" placeholder="Your name here ...">
+                            <input type = "email" class = "form-control" placeholder="Your email here">
+                            <input type = "submit" class = "btn-submit btn" value = "Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- footer -->
+    <footer id = "footer" class = "py-7">
+        <div class = "container">
+            <div class = "footer-content">
+                <div>
+                    <ul class = "flex">
+                        <li><a href = "#">About Me</a></li>
+                        <li><a href = "#">My Hobbies</a></li>
+                        <li><a href = "#">My Achievements</a></li>
+                        <li><a href = "#">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- typewriting js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Computer Engineering","Programer", "Clarinet Player"],
+            typeSpeed : 100,
+            backSpeed : 100,
+            looped : true
+        })
+    </script>
+</html>
